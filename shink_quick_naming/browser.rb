@@ -17,6 +17,8 @@ module ShinkQuickNaming
       else
         set_url(index_path)
         set_window_min_size_by_type
+        LocalServer.add_user("#{@type}_dialog")#使用复用服务
+        after_close{ LocalServer.delete_user("#{@type}_dialog") }#注册关闭事件
         SuRunJs.set_web_dialog(@type, self)#将窗口类型与窗口实例绑定
         case @type
         when 'quick_naming'

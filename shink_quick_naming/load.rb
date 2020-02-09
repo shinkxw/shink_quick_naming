@@ -7,3 +7,4 @@ Sketchup::require('path')#路径相关方法
 Sketchup::require('db')#数据定义
 Sketchup::require('main')#按钮菜单定义
 Sketchup::require('browser')#对话框定义
+Sketchup::require('local_server')#本地api服务

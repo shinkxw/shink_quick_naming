@@ -1,5 +1,5 @@
 module ShinkQuickNaming
-  class Browser
+  class Browser < ShinkBrowser
     def initialize(title, type)
       @type = type
       super(title, true, type, 0, 0, 500, 150, true)

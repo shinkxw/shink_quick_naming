@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.18.1",
     "bootstrap": "^3.3.7",
     "easyscroll": "^1.0.1",
     "es6-promise": "^4.1.1",

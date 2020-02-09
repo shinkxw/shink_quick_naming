@@ -14,7 +14,7 @@
     "bootstrap": "^3.3.7",
     "easyscroll": "^1.0.1",
     "es6-promise": "^4.1.1",
-    "jquery": "^1.9.1",
+    "jquery": "^3.4.0",
     "vue": "^2.5.22",
     "vue-router": "^3.0.7"
   },

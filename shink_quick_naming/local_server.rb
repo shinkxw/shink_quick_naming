@@ -13,6 +13,11 @@ module ShinkQuickNaming
     IsWindows ? IEVersion.to_s : '0'
   end
 
+  #udoi统一接口
+  server.add_api '/udoi' do |query|
+    UDOI.operate_arr(query).to_json
+  end
+
   Server = server
 
   LocalServer = ReuseService.new('local_server') do

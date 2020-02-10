@@ -8,3 +8,5 @@ Sketchup::require('db')#数据定义
 Sketchup::require('main')#按钮菜单定义
 Sketchup::require('browser')#对话框定义
 Sketchup::require('local_server')#本地api服务
+Sketchup::require('quick_naming')#快速命名分层功能
+Sketchup::require('unified_data_operation_interface')#统一数据操作接口

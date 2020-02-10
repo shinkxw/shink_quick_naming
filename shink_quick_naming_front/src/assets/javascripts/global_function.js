@@ -54,3 +54,14 @@ window.su_location = function su_location(name, params = false){
     window.location = 'skp:' + name
   }
 }
+
+window.udoi = function udoi(source, type, params = {}, callback = null) {
+  params.udoi_source = source
+  params.udoi_type = type
+  axios.get('/udoi', {params: params})
+    .then((res) => {
+      if (res && res.data) {
+        if (callback) { callback(res.data) }
+      }
+    })
+}

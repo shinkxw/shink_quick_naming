@@ -8,6 +8,11 @@ module ShinkQuickNaming
     end
 
     def set_callback
+      add_callback("set_current_entity_name_and_layer") do |d, param|
+        QuickNaming.set_current_entity_name_and_layer(param.name, param.layer_id)
+        run_js(@type, "quick_naming.refresh_entity_info()")
+      end
+
       add_callback("alert"){|d, param| UI.messagebox(param.message)}
     end
 

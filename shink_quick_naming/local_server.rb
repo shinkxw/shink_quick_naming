@@ -18,6 +18,11 @@ module ShinkQuickNaming
     UDOI.operate_arr(query).to_json
   end
 
+  #获取当前选中对象的名称与图层信息
+  server.add_api '/get_current_entity_layer_info' do |query|
+    QuickNaming.current_entity_info
+  end
+
   Server = server
 
   LocalServer = ReuseService.new('local_server') do
